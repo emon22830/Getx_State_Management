@@ -23,7 +23,14 @@ children: [
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: (){
-            Get.snackbar('Welcome', 'You are also a member of our platform');
+            Get.snackbar('Welcome', 'You are also a member of our platform',
+            backgroundColor: Colors.blue,
+              icon: Icon(Icons.add),
+              onTap: (snap){
+
+              },
+              snackPosition: SnackPosition.BOTTOM,
+            );
           }
       ),
     );
